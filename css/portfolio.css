@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Assistant&display=swap');
+
+:root{
+  --nav-color : #1455D9;
+  --prpl : #7345FF;
+  --bg: #262626;
+  --light-blue: #0460D9;
+  --bland-blue: #3752A6;
+  --light-green: #23D9B7;
+
+  --h-font-1 : 'Anton', sans-serif;
+  --regular-font-1: 'EB Garamond', serif;
+  --regular-font-2: 'Assistant', sans-serif;
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+ box-sizing: border-box;
+}
+
+
+h1{
+  text-align: center;
+  font-size: 3em;
+  font-family: var(--h-font-1);
+  text-transform: uppercase;
+}
+
+span{
+  opacity: 0;
+  transition: all .8s ease;
+  transform: translateY(50px);
+  display: inline-block;
+  color: var(--light-green)
+  
+}
+
+span.fade{
+  opacity: 1;
+  transform: translateY(0px);
+  color: var(--prpl);
+  line-height: 10vh; 
+}
+
+.content{
+  margin-top: 1.5em;
+}
+
+.img{
+ width:50%;
+}
+
+.img-holder{
+  padding-left: 35%;
+}
+.description{
+  text-align: center;
+  font-family: var(--regular-font-1);
+}
+.portfolio{
+  display: grid;
+  grid-template-columns: 1fr;
+  
+}
+
+.title{
+   font-size: 1.5em;
+   font-family: var(--h-font-1);
+   text-align: center; 
+}

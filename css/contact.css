@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Assistant&display=swap');
+
+:root{
+  --nav-color : #1455D9;
+  --prpl : #7345FF;
+  --bg: #262626;
+  --light-blue: #0460D9;
+  --bland-blue: #3752A6;
+  --light-green: #23D9B7;
+
+  --h-font-1 : 'Anton', sans-serif;
+  --regular-font-1: 'EB Garamond', serif;
+  --regular-font-2: 'Assistant', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  font-size: 1.2em;
+  font-family: var(--h-font-1);
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: var(--prpl);
+}
+
+
+.contact-article{
+  display: block;
+  padding : 5em;
+  border-radius: 30px;
+  
+}
+
+.contact-info{
+  text-align: center;
+  font-size: 1.3em;
+  font-family: var(--regular-font-1);
+  padding-bottom: 2em;
+  list-style: none;
+}
+
+
+.social-media-feed{
+  padding-left: 40%;
+}
+
+.social-media-info{
+  list-style: none;
+  display: grid;
+  grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr;
+}
+
+.social-icons{
+  width: 50%;
+}
+
+
+@media screen and (max-width: 600px){
+
+  h1{
+    font-size: 1em;
+  }
+
+.contact-info{
+  font-size: 0.95em;
+}
+
+  .social-icons{
+    width: 60%;
+  }
+
+  .social-media-info{
+    display: grid;
+    grid-template-columns: .3fr .3fr .3fr .3fr;
+  }
+
+  .social-media-feed{
+    padding-left: 9%;
+  }
+
+}

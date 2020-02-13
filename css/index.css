@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Assistant&display=swap');
+
+:root{
+  --nav-color : #1455D9;
+  --prpl : #7345FF;
+  --bg: #262626;
+  --light-blue: #0460D9;
+  --bland-blue: #3752A6;
+  --light-green: #23D9B7;
+
+  --h-font-1 : 'Anton', sans-serif;
+  --regular-font-1: 'EB Garamond', serif;
+  --regular-font-2: 'Assistant', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  padding-left: 5em;
+}
+
+
+h1{
+  font-family: var(--h-font-1);
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+ /* line-height: 20vh; */
+}
+
+
+p{
+  text-align: center;
+}
+
+span{
+  opacity: 0;
+  transition: all .8s ease;
+  transform: translateY(50px);
+  display: inline-block;
+  color: var(--light-green); 
+}
+
+span.fade{
+  opacity: 1;
+  transform: translateY(0px);
+  color: var(--prpl);
+  line-height: 10vh; 
+}
+
+.intro{
+  text-align: center;
+  padding-top: 100px;
+}
+
+
+.info{
+  font-family: var(--regular-font-2);
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.navigation{
+  padding-left: 3em;
+  padding-top: 2em; 
+}
+
+.nav-list{
+  list-style: none;
+  display: grid;
+  grid-template-columns: .2fr .2fr .2fr .2fr;
+  font-family: var(--regular-font-1);
+  font-size: 1.2em;
+  padding-left: 10em; 
+}
+
+.nav-link{
+  text-decoration: none;
+  color: var(--bg);
+}
+
+.nav-content{
+ text-transform: capitalize;
+}
+
+.nav-content :hover{
+  color: var(--light-green); 
+}
+
+.social-media-feed{
+  padding-left: 39.5%;
+}
+
+.social-list{
+  list-style: none;
+  display: grid;
+  grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr;
+}
+
+.social-icons{
+  width: 20%; 
+}
+
+.btn{
+  padding-left: 46%;
+  margin-top: 2em;
+}
+
+.portfolio-btn{
+ padding: 1em;
+ border-radius: 10px;
+ box-shadow: black ;
+ color: black;
+ font-family: var(--regular-font-1);
+ background-color: var(--prpl);
+ color: white;
+ font-size: 0.8em;
+}
+
+.portfolio-btn:hover{
+  background-color: var(--light-green);
+}
+
+.profile{
+  padding-top: 4em;
+  padding-left: 42.5%;
+}
+
+.my-photo{
+  width: 25%;
+  border-radius:110px;
+}
+
+.more-info{
+  text-align: center;
+  border-top: solid black thin;
+  border-bottom: solid black thin;
+  margin: 30px;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  font-family: var(--regular-font-1);
+  font-size: medium;
+  text-transform: capitalize;
+}
+
+
+@media screen and (max-width : 600px){  
+  .navigation{
+    padding-left: 0em;
+  }
+  .nav-list{
+    display:grid;
+    grid-template-columns: 0.3fr .3fr .3fr 0.3fr;
+    grid-gap: .4em;
+    font-size: 1em;
+    padding-left:0em;
+    padding-right: 2em;
+  }
+
+  .social-media-feed{
+    padding-left: 10%;
+  }
+
+  .social-list{
+    display: grid;
+    grid-template-columns: 0.3fr 0.3fr 0.3fr 0.3fr;
+  }
+  .social-icons{
+      width: 45%;
+  }
+
+  .btn{
+    padding-left: 33%;
+  }
+
+
+  .my-photo{
+    width: 50%;
+  }
+
+  .profile{
+    padding-left: 33%;
+  }
+}
