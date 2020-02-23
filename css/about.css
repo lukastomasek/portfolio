@@ -83,4 +83,29 @@ h2{
 }
 
 
+@media screen and (max-width: 600px){
+.grid{
+  display: inline;
 
+}
+.image-div{
+  border-radius: 0px;
+}
+
+.intro-text{
+  width: 80%;
+  opacity: 1;
+  padding-left: 0em;
+  text-align: center;
+  margin: 2.5em;
+}
+
+.intro-appear{
+  padding-left: 0em;
+}
+
+.intro{
+  padding-left: 0em;
+}
+
+}

@@ -172,19 +172,19 @@ span.fade{
     grid-template-columns: 0.3fr 0.3fr 0.3fr 0.3fr;
   }
   .social-icons{
-      width: 45%;
+      width: 20%;
   }
 
   .btn{
-    padding-left: 33%;
+    padding-left: 35%;
   }
 
 
   .my-photo{
-    width: 50%;
+    width: 40%;
   }
 
   .profile{
-    padding-left: 33%;
+    padding-left: 32%;
   }
 }
